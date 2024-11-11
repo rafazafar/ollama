@@ -94,9 +94,9 @@ func (p *blobDownloadPart) UnmarshalJSON(b []byte) error {
 }
 
 const (
-	numDownloadParts          = 16
+	numDownloadParts          = 1
 	minDownloadPartSize int64 = 100 * format.MegaByte
-	maxDownloadPartSize int64 = 1000 * format.MegaByte
+	maxDownloadPartSize int64 = 10000 * format.MegaByte
 )
 
 func (p *blobDownloadPart) Name() string {
